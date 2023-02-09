@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Open Sans, sans-serif;
+}
+
+header{
+    height: 100%;
+    padding: 20px 20px 40px;
+    background-color: #AB033B;
+    color: #f0e4df;
+    text-align: center;
+    border-bottom: solid 2px #ffc2d7;
+}
+
+header h1{
+    font-family: 'Lora', sans-serif;
+    margin-bottom: 0;
+    font-size: 50px;
+}
+
+header p{
+    font-family: 'Lexend', sans-serif;
+    font-size: 18px;
+}
+
+#grafite{
+    background-color: #dd7ecd;
+    display: block;
+    margin: 0;
+    width: 100%;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+#grafite .artista{
+    color: #3b0331;
+}
+
+#croche{
+    background-color: #8F93D9;
+    display: block;
+    margin: 0;
+    width: 100%;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+#croche .artista{
+    color: #11122b;
+}
+
+#mosaico{
+    background-color: #D9CD29;
+    display: block;
+    margin: 0;
+    width: 100%;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+#mosaico .artista{
+    color: #242101;
+}
+
+.card{
+    color: #0a0a0a;
+    background-color: #fffaf8;
+    display: inline-block;
+    margin: 10px;
+    border: 10px solid #fffaf8;
+    border-radius: 20px;
+    vertical-align:top;
+    max-height: 100%;
+    text-align: start;
+    font-family: 'Lexend', sans-serif;   
+}
+
+.card img{
+    display: block;
+    border-radius: 20px 20px 0 0;
+    width: 300px;
+    height: 300px;
+}
+
+.card img::after{
+    box-shadow: inset 0 0 10px;
+}
+
+.card details{
+    display: inline-block;
+    width: 300px;
+    height: auto;
+}
+
+.card details summary{
+    font-size: 18px;
+    padding: 10px;
+}
+
+.card details[open] summary{
+    padding: 10px 10px 0;
+}
+
+.card details p{
+    font-size: 18px;
+    padding: 0 10px;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.artista{
+    font-size: 50px;
+    font-family:'Lora', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-shadow: 4px 3px #fffaf8;
+    text-transform: uppercase;
+}
+
+footer{
+    background-color: #0f0d05;
+    color: #e7ded4;
+    display: block;
+    margin: 0;
+    padding: 20px 10px;
+    height: 100%;
+    width: 100%;
+}
+
+footer div{
+    display: inline-block;
+    margin: 20px;
+    padding: 2px;
+    vertical-align: top;
+    font-family: 'Lexend', sans-serif;
+    font-size: 14px;
+}
+
+footer .textinho a{
+    color: #F2EAE1;
+}
+
+footer .ig ul{
+    list-style: none;
+}
+
+footer .ig ul li a{
+    color: #F2EAE1;
+}
+
+footer .fontes ul{
+    list-style: none;
+}
+
+footer .fontes ul li a{
+    color: #F2EAE1;
+}
+
+footer .fontes summary{
+    padding-bottom: 6px;
+}
+
+/*responsividade!*/
+
+@media (max-width: 1060px){
+    header h1{
+        font-size: 45px;
+    }
+    .card img{
+        width: 250px;
+        height: 250px;
+    }
+    .card details{
+        width: 250px;
+    }
+    .card details summary{
+        font-size: 16px;
+    }
+    .card details p{
+        font-size: 16px;
+    }
+    .artista{
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 700px){
+    header h1{
+        font-size: 32px;
+    }
+    .artista{
+        font-size: 37px;
+        text-shadow: 3px 2px #fffaf8;
+    }
+}
