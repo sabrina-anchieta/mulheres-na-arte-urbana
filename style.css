@@ -7,16 +7,33 @@
 
 body{
     font-family: Open Sans, sans-serif;
+    background-color: #eee8ea;
 }
 
 header{
-    height: 100%;
+
     padding: 20px 20px 40px;
-    background-color: #AB033B;
-    color: #f0e4df;
-    text-align: center;
-    border-bottom: solid 2px #ffc2d7;
+    background-color: #eee8ea;
+    color: #0a0a0a;
+    display: flex;
+    border-bottom: solid 2px #e7dce0;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
 }
+
+#header-text{
+    max-width: 700px;
+    margin: 0;
+}
+
+#minilogo {
+    fill: none;
+    height: 100%;
+    stroke: #0a0a0a;
+    stroke-miterlimit: 10;
+    stroke-width: 5.5px;
+    transform-origin: center;
+  }
 
 header h1{
     font-family: 'Lora', sans-serif;
@@ -29,13 +46,21 @@ header p{
     font-size: 18px;
 }
 
+
 #grafite{
-    background-color: #dd7ecd;
+    background-color: #d89bcb;
     display: block;
-    margin: 0;
-    width: 100%;
+    margin: 15px auto;
+    border-radius: 30px;
+    width: 90%;
     padding: 30px 20px;
     text-align: center;
+}
+
+#grafite:hover{
+    transform:translateX(-10px);
+    box-shadow: #3b0331 3px 3px;
+    transition: 800ms;
 }
 
 #grafite .artista{
@@ -45,10 +70,17 @@ header p{
 #croche{
     background-color: #8F93D9;
     display: block;
-    margin: 0;
-    width: 100%;
+    margin: 15px auto;
+    border-radius: 30px;
+    width: 90%;
     padding: 30px 20px;
     text-align: center;
+}
+
+#croche:hover{
+    transform:translateX(-10px);
+    box-shadow: #11122b 3px 3px;
+    transition: 800ms;
 }
 
 #croche .artista{
@@ -56,13 +88,23 @@ header p{
 }
 
 #mosaico{
-    background-color: #D9CD29;
+    background-color: #d8ce42;
     display: block;
-    margin: 0;
-    width: 100%;
+    margin: 15px auto;
+    border-radius: 30px;
+    width: 90%;
     padding: 30px 20px;
     text-align: center;
+
 }
+
+#mosaico:hover{
+    transform:translateX(-10px);
+    box-shadow: #242101 3px 3px;
+    transition: 800ms;
+}
+
+
 
 #mosaico .artista{
     color: #242101;
@@ -126,8 +168,10 @@ header p{
 
 footer{
     background-color: #0f0d05;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     color: #e7ded4;
-    display: block;
     margin: 0;
     padding: 20px 10px;
     height: 100%;
@@ -198,5 +242,9 @@ footer .fontes summary{
     .artista{
         font-size: 37px;
         text-shadow: 3px 2px #fffaf8;
+    }
+
+    #minilogo{
+        width: 50px;
     }
 }
